@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from document import Document
-from record import Record
+from odatoo.document import Document
+from odatoo.record import Record
 
 
 class TestDocument(TestCase):
