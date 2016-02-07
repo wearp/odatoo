@@ -1,9 +1,10 @@
-from disutils.core import setup
+import os
+from setuptools import setup
 
 
 setup(
-    name = 'odoo-data',
-    packages = ['odoo-data'],
+    name = 'odatoo',
+    packages = ['odatoo', 'tests'],
     version = '0.1',
     description = 'Odoo XML data files library',
     author = 'Will Earp',
