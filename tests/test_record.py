@@ -3,8 +3,8 @@ from xml.etree.ElementTree import Element
 
 from mock import patch
 
-from odatoo.record import Record
-from odatoo.field import Field
+from odatoo.odatoo.record import Record
+from odatoo.odatoo.field import Field
 
 
 class TestRecord(TestCase):
@@ -12,7 +12,7 @@ class TestRecord(TestCase):
     def setUp(self):
         self.data = Element('test_data')
 
-    @patch('odatoo.record.Record._create')
+    @patch('odatoo.odatoo.record.Record._create')
     def test_init_calls_create(self, mocked_create):
         mocked_create.return_value = None
         Record(self.data, {'id': 'test_id'})
