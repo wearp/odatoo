@@ -1,4 +1,5 @@
 import xml.dom.minidom as xmldom
+
 from xml.etree.ElementTree import Element, SubElement, tostring
 
 from record import Record
@@ -10,8 +11,8 @@ class Document(object):
         self.document = Element('openerp')
         self.data = SubElement(self.document, 'data', {'noupdate': update})
 
-    def record(self, attributes):
-        return Record(self.data, attributes)
+    def record(self, **kwargs):
+        return Record(self.data, **kwargs)
 
     def write(self, file):
         pretty_xml = self._pretty_print()

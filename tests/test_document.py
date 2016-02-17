@@ -20,7 +20,7 @@ class TestDocument(TestCase):
             pass
 
     def test_record_returns_object_of_type_Record(self):
-        record = self.document.record({})
+        record = self.document.record(model='test')
         self.assertEqual(type(record), Record)
 
     def test_write_creates_file_and_writes_document(self):
