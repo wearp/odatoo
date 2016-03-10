@@ -14,6 +14,7 @@ pip install odatoo
 ```python
 >>> from odatoo.document import Document
 >>> doc = Document()
+>>> ...
 ```
 
 ## Create a record and fields
@@ -36,6 +37,7 @@ pip install odatoo
 >>> field.description = "Course 1's description"
 >>> another_field = another_record.field(name="teacher_id")
 >>> another_field.ref = "teacher_1"
+>>> ...
 ```
 
 ## Write document to a file
