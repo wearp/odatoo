@@ -27,6 +27,17 @@ pip install odatoo
 >>> ...
 ```
 
+## Set/edit field and record properties
+```python
+>>> # 'name' is a required field property
+>>> field = another_record.field(name="name")
+>>> # set 'value''
+>>> field.value = "Course 1"
+>>> field.description = "Course 1's description"
+>>> another_field = another_record.field(name="teacher_id")
+>>> another_field.ref = "teacher_1"
+```
+
 ## Write document to a file
 ```python
 >>> doc.write("demo.xml")
@@ -42,7 +53,9 @@ pip install odatoo
       <field name="description">Course 0's description</field>
     </record>
     <record id="course1" model="openacademy.course">
-      ...
+      <field name="name">Course 1</field>
+      <field name="description">Course 1's description</field>
+      <field name="teacher_id" ref="teacher_1"/>
     </record>
   </data>
 </openerp>
