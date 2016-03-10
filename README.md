@@ -1,7 +1,8 @@
-[![Build Status](https://travis-ci.org/wearp/odatoo.svg?branch=master)](https://travis-ci.org/wearp/odatoo)
 # odatoo
-_Generate Odoo XML data files, effortlessly, in python._
 
+[![Build Status](https://travis-ci.org/wearp/odatoo.svg?branch=master)](https://travis-ci.org/wearp/odatoo)
+
+_Generate Odoo XML data files, effortlessly, in python._
 
 For times when you need to create _a lot_ of data (i.e. for demonstration or test purposes), and you can't be bothered.
 
