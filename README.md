@@ -1,6 +1,6 @@
 # odatoo
 
-[![Build Status](https://travis-ci.org/wearp/odatoo.svg?branch=master)](https://travis-ci.org/wearp/odatoo)
+[![Build Status](https://travis-ci.org/wearp/odatoo.svg?branch=master)](https://travis-ci.org/wearp/odatoo) [![Coverage Status](https://coveralls.io/repos/github/wearp/odatoo/badge.svg?branch=master)](https://coveralls.io/github/wearp/odatoo?branch=master)
 
 _Generate Odoo XML data files, effortlessly, in python._
 
