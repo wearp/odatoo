@@ -3,9 +3,8 @@ import os
 from xml.etree.ElementTree import ElementTree
 from unittest import TestCase
 
-
-from odatoo.odatoo.document import Document
-from odatoo.odatoo.record import Record
+from odatoo.document import Document
+from odatoo.record import Record
 
 
 class TestDocument(TestCase):

@@ -3,9 +3,9 @@ from xml.etree.ElementTree import Element
 
 from mock import patch
 
-from odatoo.odatoo.record import Record
-from odatoo.odatoo.field import Field
-from odatoo.odatoo.errors import RecordValidationError
+from odatoo.record import Record
+from odatoo.field import Field
+from odatoo.errors import RecordValidationError
 
 
 class TestRecord(TestCase):
@@ -13,7 +13,7 @@ class TestRecord(TestCase):
     def setUp(self):
         self.data = Element('test_data')
 
-    @patch('odatoo.odatoo.record.Record._validate')
+    @patch('odatoo.record.Record._validate')
     def test_init_calls_create(self, mocked_validate):
         mocked_validate.return_value = None
         Record(self.data, id='test_id')
