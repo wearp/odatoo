@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/wearp/odatoo.svg?branch=master)](https://travis-ci.org/wearp/odatoo)
 # odatoo
 _Generate Odoo XML data files, effortlessly, in python._
 
